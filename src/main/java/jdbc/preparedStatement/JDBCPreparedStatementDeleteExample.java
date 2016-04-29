@@ -33,7 +33,7 @@ public class JDBCPreparedStatementDeleteExample {
         try {
             dbConnection = DataSource.getInstance().getConnection();
             preparedStatement = dbConnection.prepareStatement(deleteSQL);
-            preparedStatement.setInt(1, 15);
+            preparedStatement.setInt(1, 20);
 
             // execute delete SQL statement
             preparedStatement.executeUpdate();
